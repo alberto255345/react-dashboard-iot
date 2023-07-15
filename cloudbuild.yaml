@@ -1,0 +1,5 @@
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['builds', 'submit', '--tag', 'gcr.io/projetorodrigo/front-end:$REVISION_ID', './']
+
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["run", "deploy", "front-end", "--image", "gcr.io/projetorodrigo/front-end:$REVISION_ID", "--region", "us-central1", "--allow-unauthenticated"]
