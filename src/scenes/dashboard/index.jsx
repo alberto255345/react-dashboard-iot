@@ -8,7 +8,8 @@ import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import Header from "../../components/Header";
-import LineChart from "../../components/LineChart";
+// import LineChart from "../../components/LineChart";
+import LineChart from "../../components/LineChart_temperatura";
 import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
@@ -94,22 +95,8 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                Gráfico de Temperatura
               </Typography>
-              <Typography
-                variant="h3"
-                fontWeight="bold"
-                color={colors.greenAccent[500]}
-              >
-                $59,342.32
-              </Typography>
-            </Box>
-            <Box>
-              <IconButton>
-                <DownloadOutlinedIcon
-                  sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
-                />
-              </IconButton>
             </Box>
           </Box>
           <Box height="250px" m="-20px 0 0 0">
