@@ -22,6 +22,6 @@ RUN \
 
 RUN npm install --production
 
-ENV PORT 5000
+ENV PORT 8080
 
 CMD ["npm", "start"]

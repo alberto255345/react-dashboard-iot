@@ -1,5 +1,5 @@
 - name: 'pkg.dev/cloud-builders/gcloud'
-  args: ['builds', 'submit', '--region=us-central1', '--tag', 'us-central1-docker.pkg.dev/projetorodrigo-381505/front-end:$REVISION_ID', './']
+  args: ['builds', 'submit', '--region=us-central1', '--tag', 'us-central1-docker.pkg.dev/projetorodrigo-381505/projetorodrigo/front-end:$REVISION_ID', './']
 
 - name: "pkg.dev/cloud-builders/gcloud"
-  args: ["run", "deploy", "front-end", "--image", "us-central1-docker.pkg.dev/projetorodrigo-381505/front-end:$REVISION_ID", "--region", "us-central1", "--allow-unauthenticated"]
+  args: ["run", "deploy", "front-end", "--image", "us-central1-docker.pkg.dev/projetorodrigo-381505/projetorodrigo/front-end:$REVISION_ID", "--region", "us-central1", "--allow-unauthenticated"]
